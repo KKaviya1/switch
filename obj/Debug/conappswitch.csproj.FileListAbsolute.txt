@@ -1,0 +1,8 @@
+F:\Day - 2\conappswitch\conappswitch\obj\Debug\conappswitch.csproj.AssemblyReference.cache
+F:\Day - 2\conappswitch\conappswitch\obj\Debug\conappswitch.csproj.SuggestedBindingRedirects.cache
+F:\Day - 2\conappswitch\conappswitch\obj\Debug\conappswitch.csproj.CoreCompileInputs.cache
+F:\Day - 2\conappswitch\conappswitch\bin\Debug\conappswitch.exe.config
+F:\Day - 2\conappswitch\conappswitch\bin\Debug\conappswitch.exe
+F:\Day - 2\conappswitch\conappswitch\bin\Debug\conappswitch.pdb
+F:\Day - 2\conappswitch\conappswitch\obj\Debug\conappswitch.exe
+F:\Day - 2\conappswitch\conappswitch\obj\Debug\conappswitch.pdb
