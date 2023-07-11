@@ -10,37 +10,52 @@ namespace conappswitch
     {
         static void Main(string[] args)
         {
-            string cCode;
-            string lang;
-            Console.WriteLine("enter country code");
-            cCode = Console.ReadLine();
-            switch (cCode)
+            string cCode, lang, choice;
+            do
             {
-                case "uk":
-                    {
-                        lang = "Dari,Pashto";
-                        break;
-                    }
-                case "in":
-                    {
-                        lang = "hindi,english,tamil,telugu";
-                        break;
-                    }
-                case "uae":
-                    {
-                        lang = "arabic";
-                        break;
+                Console.WriteLine("Enter Country Code");
+                cCode = Console.ReadLine().ToLower();
+                switch (cCode)
+                {
+                    case "uk":
+                    case "us":
+                        {
+                            lang = "English";
+                            break;
+                        }
+                    case "af":
+                        {
+                            lang = "Dari,Pashto";
+                            break;
+                        }
+                    case "in":
+                        {
+                            lang = "Hindi,English,Tamil,Telgu,Punjabi";
+                            break;
+                        }
 
-                    }
-
-                default:
-                    {
-                        Console.WriteLine($"sorry!! you country {cCode} is not in ourdb");
-                        lang = "not found!!!";
-                        break;
-                    } 
+                    case "uae":
+                    case "om":
+                    case "ksa":
+                    case "egypt":
+                        {
+                            lang = "Arabic";
+                            break;
+                        }
+                    default:
+                        {
+                            Console.WriteLine($"Sorry!! Your country {cCode} is not in OurDb");
+                            lang = "Not Found!!!";
+                            break;
+                        }
+                }
+                Console.WriteLine("Country Code: \t " + cCode + "\n Language(s): \t" + lang);
+                Console.WriteLine("Do you wanna continue if yes press y \n To exit press any key");
+                choice = Console.ReadLine().ToLower();
             }
-            Console.WriteLine("country code " + cCode + "languages(s)" + lang);
-            Console.ReadKey();
+            while (choice == "y");
+
+
+        }
         } } 
 }
